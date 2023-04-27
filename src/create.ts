@@ -18,7 +18,7 @@ const runCommand = (command: string) => {
 
 export default async function (projectName: string) {
   // clones repo inside the given project name folder
-  const cloneGitTemplate = `git clone https://github.com/matter-labs/zksync-hardhat-template ${projectName}`;
+  const cloneGitTemplate = `git clone https://github.com/sambitsargam/zksync-boilerplate ${projectName}`;
 
   // changes dir and installs deps with Yarn
   const installDeps = `cd ${projectName} && yarn`;

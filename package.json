@@ -1,6 +1,6 @@
 {
   "name": "zk-wizard",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "CLI Tool for ZkSync Era Contract Creation (ERC20,ERC721,ERC1155,GOVERNANCE) and Deployment and faucet option .",
   "main": "bin/index.js",
   "bin": {

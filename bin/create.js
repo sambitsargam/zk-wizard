@@ -32,7 +32,7 @@ const runCommand = (command) => {
 function default_1(projectName) {
     return __awaiter(this, void 0, void 0, function* () {
         // clones repo inside the given project name folder
-        const cloneGitTemplate = `git clone https://github.com/matter-labs/zksync-hardhat-template ${projectName}`;
+        const cloneGitTemplate = `git clone https://github.com/sambitsargam/zksync-boilerplate ${projectName}`;
         // changes dir and installs deps with Yarn
         const installDeps = `cd ${projectName} && yarn`;
         const cleanup = `cd ${projectName} && rm -f -r .git`;
