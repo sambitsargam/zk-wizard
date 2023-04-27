@@ -35,7 +35,7 @@ function default_1(projectName) {
         const cloneGitTemplate = `git clone https://github.com/sambitsargam/zksync-boilerplate ${projectName}`;
         // changes dir and installs deps with Yarn
         const installDeps = `cd ${projectName} && yarn`;
-        const cleanup = `cd ${projectName} && rm -f -r .git`;
+        const cleanup = `cd ${projectName}`;
         console.log(chalk_1.default.magentaBright('Creating a zkSync - Hardhat project...'));
         console.log(chalk_1.default.magentaBright(`Initialising project with name ${projectName}`));
         const cloned = runCommand(cloneGitTemplate);

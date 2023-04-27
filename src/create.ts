@@ -19,19 +19,22 @@ const runCommand = (command: string) => {
 export default async function (projectName: string) {
   // clones repo inside the given project name folder
   const cloneGitTemplate = `git clone https://github.com/sambitsargam/zksync-boilerplate ${projectName}`;
+ // changes dir and installs deps with Yarn
+ const installDeps = `cd ${projectName} && yarn`;
 
-  // changes dir and installs deps with Yarn
-  const installDeps = `cd ${projectName} && yarn`;
+ const cleanup = `cd ${projectName}`;
 
-  console.log(chalk.magentaBright('Creating a zkSync - Hardhat project...'));
+ console.log(chalk.magentaBright('Creating a zkSync - Hardhat project...'));
 
-  console.log(
-    chalk.magentaBright(`Initialising project with name ${projectName}`)
-  );
+ console.log(
+   chalk.magentaBright(`Initialising project with name ${projectName}`)
+ );
 
-  const cloned = runCommand(cloneGitTemplate);
+ const cloned = runCommand(cloneGitTemplate);
 
-  if (!cloned) process.exit(-1);
+ if (!cloned) process.exit(-1);
+ const cleaned = runCommand(cleanup);
+ if (!cleaned) process.exit(-1);
 
   console.log(chalk.magentaBright('Installing dependencies with yarn...'));
 
