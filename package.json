@@ -1,0 +1,33 @@
+{
+  "name": "zk-wizard",
+  "version": "0.0.7",
+  "description": "CLI Tool for ZkSync Era Contract Creation (ERC20,ERC721,ERC1155,GOVERNANCE) and Deployment and faucet option .",
+  "main": "bin/index.js",
+  "bin": {
+    "zk-wizard": "bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["zksync","hardhat","wizard","cli","erc20","erc721","erc1155","governance","contract","deployment","faucet"],
+  "author": "Sambit Sargam Ekalabya",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "@openzeppelin/wizard": "^0.2.3",
+    "chalk": "5.2.0",
+    "ethers": "^6.3.0",
+    "figlet": "^1.6.0",
+    "inquirer": "^9.2.0",
+    "zksync-web3": "^0.14.3"
+  },
+  "devDependencies": {
+    "@openzeppelin/wizard": "^0.2.3",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.16.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "types": "./bin/index.d.ts"
+}
