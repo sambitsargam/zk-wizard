@@ -51,7 +51,7 @@ export default async function () {
           saveFilewithGivenPath(answerERC20.savePath, contract);
           break;
         }
-        saveFile(process.cwd(), `\${answerERC20.tokenName}.sol`, contract);
+        saveFile(process.cwd(), `/${answerERC20.tokenName}.sol`, contract);
         break;
       case "ERC721":
         const answerERC721 = await inquirer.prompt(erc721questions);
@@ -68,7 +68,7 @@ export default async function () {
           saveFilewithGivenPath(answerERC721.savePath, contract);
           break;
         }
-        saveFile(process.cwd(), `\${answerERC721.tokenName}.sol`, contract);
+        saveFile(process.cwd(), `/${answerERC721.tokenName}.sol`, contract);
         break;
       case "ERC1155":
         const answerERC1155 = await inquirer.prompt(erc1155questions);
@@ -84,7 +84,7 @@ export default async function () {
           saveFilewithGivenPath(answerERC1155.savePath, contract);
           break;
         }
-        saveFile(process.cwd(), `\${answerERC1155.tokenName}.sol`, contract);
+        saveFile(process.cwd(), `/${answerERC1155.tokenName}.sol`, contract);
         break;
       case "GOVERNANCE":
         const answerGoverance = await inquirer.prompt(governancequestions);
@@ -99,7 +99,7 @@ export default async function () {
           saveFilewithGivenPath(answerGoverance.savePath, contract);
           break;
         }
-        saveFile(process.cwd(), `\${answerGoverance.tokenName}.sol`, contract);
+        saveFile(process.cwd(), `/${answerGoverance.tokenName}.sol`, contract);
         break;
     }
   });

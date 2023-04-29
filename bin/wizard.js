@@ -94,7 +94,7 @@ function default_1() {
               }
               saveFile(
                 process.cwd(),
-                `\${answerERC20.tokenName}.sol`,
+                `/${answerERC20.tokenName}.sol`,
                 contract
               );
               break;
@@ -117,7 +117,7 @@ function default_1() {
               }
               saveFile(
                 process.cwd(),
-                `\${answerERC721.tokenName}.sol`,
+                `/${answerERC721.tokenName}.sol`,
                 contract
               );
               break;
@@ -135,7 +135,7 @@ function default_1() {
               }
               saveFile(
                 process.cwd(),
-                `\${answerERC1155.tokenName}.sol`,
+                `/${answerERC1155.tokenName}.sol`,
                 contract
               );
               break;
@@ -156,7 +156,7 @@ function default_1() {
               }
               saveFile(
                 process.cwd(),
-                `\${answerGoverance.tokenName}.sol`,
+                `/${answerGoverance.tokenName}.sol`,
                 contract
               );
               break;
